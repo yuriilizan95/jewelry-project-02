@@ -21,5 +21,8 @@
 }
 
 .section {
-  padding: 64px 0;
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
