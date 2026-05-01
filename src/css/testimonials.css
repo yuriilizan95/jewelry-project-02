@@ -7,3 +7,57 @@ blockquote {
 figcaption {
   font-style: normal;
 }
+
+.testimonials-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--main-text-color);
+
+  margin-bottom: 24px;
+}
+.testimonials-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--main-text-color);
+
+  margin-bottom: 40px;
+}
+.testimonials-list {
+}
+.testimonials-item {
+}
+.testimonials-picture {
+}
+.testimonials-image {
+}
+.testimonial-rating-list {
+}
+.testimonials-rating-item {
+}
+.testimonials-star {
+  fill: var(--icons-fill);
+}
+.testimonials-star-unfiled {
+  stroke: var(--icons-fill);
+  fill: transparent;
+}
+.testimonials-figure {
+}
+.testimonials-quote {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+.testimonials-figcaption {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
