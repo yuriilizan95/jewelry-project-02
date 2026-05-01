@@ -1,1 +1,76 @@
-<section>Contacts</section>
+<section>
+  <h3>Connect</h3>
+  <h2>Order your unique jewelry</h2>
+  <p>We'd love to hear more details from you!</p>
+
+  <form action="#" method="POST">
+    <div>
+      <label for="user-name">Name*</label>
+      <input
+        type="text"
+        name="user-name"
+        id="user-name"
+        placeholder="Tony"
+        pattern="^[a-zA-Z\s\.]{5,28}$"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="user-phone">Phone*</label>
+      <input
+        type="tel"
+        name="user-phone"
+        id="user-phone"
+        placeholder="+1 234 567 8900"
+        pattern="^+[0-9\s]{14}$"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="user-comment">Describe what you want</label>
+      <textarea
+        name="user-comment"
+        id="user-comment"
+        maxlength="500"
+        placeholder="Type your message..."
+      ></textarea>
+    </div>
+  </form>
+
+  <button type="submit">Submit</button>
+
+  <address>
+    <ul>
+      <li>
+        <svg class="" width="32" height="32" aria-hidden="true">
+          <use href="/img/contacts.svg#icon-mail"></use>
+        </svg>
+        <p>Email</p>
+        <a href="mailto:info@handmadejewelry.com">info@handmadejewelry.com</a>
+      </li>
+
+      <li>
+        <svg class="" width="32" height="32" aria-hidden="true">
+          <use href="/img/contacts.svg#icon-tel"></use>
+        </svg>
+        <p>Phone</p>
+        <a href="tel:+15550000000">+1 (555) 000-0000</a>
+      </li>
+
+      <li>
+        <svg class="" width="32" height="32" aria-hidden="true">
+          <use href="/img/contacts.svg#icon-location"></use>
+        </svg>
+        <p>Office</p>
+        <a
+          href="https://maps.app.goo.gl/cbRAUroPFJQw8KHa9"
+          target="_blank"
+          rel="noopener noreferrer"
+          >76-8 Oakington Manor Dr, London, UK</a
+        >
+      </li>
+    </ul>
+  </address>
+</section>
