@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/jewelry-project-02/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/jewelry-project-02/assets/index-CxqybGxw.css">
+    <link rel="stylesheet" crossorigin href="/jewelry-project-02/assets/index-CZY32MwU.css">
   </head>
   <body>
     <header>
@@ -75,107 +75,107 @@
     <h2 class="contacts-title">Order your unique jewelry</h2>
     <p class="contacts-text">We'd love to hear more details from you!</p>
 
-    <form class="contacts-form" action="#" method="POST">
-      <div class="contacts-form-inner">
-        <label class="contacts-form-label" for="user-name">Name*</label>
-        <input
-          class="contacts-form-input"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder="Tony"
-          pattern="^[a-zA-Z\s\.]{5,28}$"
-          required
-        />
-        <p class="text-valid">Succes!</p>
-        <p class="text-invalid">Enter name of 5 characters</p>
-      </div>
+    <div class="contacts-wrap">
+      <address class="contacts-address">
+        <ul class="contacts-address-list">
+          <li class="contacts-address-item">
+            <svg
+              class="contacts-address-svg"
+              width="27"
+              height="22"
+              aria-hidden="true"
+            >
+              <use href="/jewelry-project-02/assets/sprite-C-I0CtB3.svg#envelope-icon"></use>
+            </svg>
+            <p class="contacts-address-text">Email</p>
+            <a
+              class="contacts-address-link"
+              href="mailto:info@handmadejewelry.com"
+              >info@handmadejewelry.com</a
+            >
+          </li>
 
-      <div class="contacts-form-inner">
-        <label class="contacts-form-label" for="user-phone">Phone*</label>
-        <input
-          class="contacts-form-input"
-          type="tel"
-          name="user-phone"
-          id="user-phone"
-          placeholder="+1 234 567 8900"
-          pattern="^\+[0-9\s]{14}$"
-          required
-        />
-        <p class="text-valid">Succes!</p>
-        <p class="text-invalid">Enter in the format +1 234 567 8900</p>
-      </div>
+          <li class="contacts-address-item">
+            <svg
+              class="contacts-address-svg"
+              width="26"
+              height="26"
+              aria-hidden="true"
+            >
+              <use href="/jewelry-project-02/assets/sprite-C-I0CtB3.svg#phone-icon"></use>
+            </svg>
+            <p class="contacts-address-text">Phone</p>
+            <a class="contacts-address-link" href="tel:+15550000000"
+              >+1 (555) 000-0000</a
+            >
+          </li>
 
-      <div class="contacts-form-inner">
-        <label class="contacts-form-label" for="user-comment"
-          >Describe what you want</label
-        >
-        <textarea
-          class="contacts-form-comment"
-          name="user-comment"
-          id="user-comment"
-          maxlength="500"
-          placeholder="Type your message..."
-        ></textarea>
-      </div>
+          <li class="contacts-address-item">
+            <svg
+              class="contacts-address-svg"
+              width="22"
+              height="27"
+              aria-hidden="true"
+            >
+              <use href="/jewelry-project-02/assets/sprite-C-I0CtB3.svg#map-icon"></use>
+            </svg>
+            <p class="contacts-address-text">Office</p>
+            <a
+              class="contacts-address-link"
+              href="https://maps.app.goo.gl/cbRAUroPFJQw8KHa9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >76-8 Oakington Manor Dr, London, UK</a
+            >
+          </li>
+        </ul>
+      </address>
 
-      <button class="contacts-form-btn" type="submit">Submit</button>
-    </form>
+      <form class="contacts-form" action="#" method="POST">
+        <div class="contacts-form-inner">
+          <label class="contacts-form-label" for="user-name">Name*</label>
+          <input
+            class="contacts-form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Tony"
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            required
+          />
+          <p class="text-invalid">Enter name of 5 characters</p>
+        </div>
 
-    <address class="contacts-address">
-      <ul class="contacts-address-list">
-        <li class="contacts-address-item">
-          <svg
-            class="contacts-address-svg"
-            width="32"
-            height="32"
-            aria-hidden="true"
-          >
-            <use href="/jewelry-project-02/assets/sprite-C-I0CtB3.svg#envelope-icon"></use>
-          </svg>
-          <p class="contacts-address-text">Email</p>
-          <a
-            class="contacts-address-link"
-            href="mailto:info@handmadejewelry.com"
-            >info@handmadejewelry.com</a
-          >
-        </li>
+        <div class="contacts-form-inner">
+          <label class="contacts-form-label" for="user-phone">Phone*</label>
+          <input
+            class="contacts-form-input"
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            placeholder="+1 234 567 8900"
+            pattern="^\+[0-9\s]{14}$"
+            required
+          />
+          <p class="text-invalid">Enter in the format +1 234 567 8900</p>
+        </div>
 
-        <li class="contacts-address-item">
-          <svg
-            class="contacts-address-svg"
-            width="32"
-            height="32"
-            aria-hidden="true"
+        <div class="contacts-form-inner">
+          <label class="contacts-form-label" for="user-comment"
+            >Describe what you want</label
           >
-            <use href="/jewelry-project-02/assets/sprite-C-I0CtB3.svg#phone-icon"></use>
-          </svg>
-          <p class="contacts-address-text">Phone</p>
-          <a class="contacts-address-link" href="tel:+15550000000"
-            >+1 (555) 000-0000</a
-          >
-        </li>
+          <textarea
+            class="contacts-form-comment"
+            name="user-comment"
+            id="user-comment"
+            maxlength="500"
+            placeholder="Type your message..."
+          ></textarea>
+        </div>
 
-        <li class="contacts-address-item">
-          <svg
-            class="contacts-address-svg"
-            width="32"
-            height="32"
-            aria-hidden="true"
-          >
-            <use href="/jewelry-project-02/assets/sprite-C-I0CtB3.svg#map-icon"></use>
-          </svg>
-          <p class="contacts-address-text">Office</p>
-          <a
-            class="contacts-address-link"
-            href="https://maps.app.goo.gl/cbRAUroPFJQw8KHa9"
-            target="_blank"
-            rel="noopener noreferrer"
-            >76-8 Oakington Manor Dr, London, UK</a
-          >
-        </li>
-      </ul>
-    </address>
+        <button class="contacts-form-btn" type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
 
