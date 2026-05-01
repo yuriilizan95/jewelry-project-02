@@ -21,6 +21,12 @@
   --textarea-active: var(--input-active-border);
   --placeholder-text-color: rgba(0, 0, 0, 0.6);
   --inactive-opacity: 0.3;
+
+  --t-duration: 250ms;
+  --t-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-delay: 0s;
+
+  --t-prop: all;
 }
 
 /* Базові стилі */
