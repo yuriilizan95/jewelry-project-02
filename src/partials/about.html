@@ -1,7 +1,25 @@
 <section class="section about" id="about">
     <div class="container about">
 
-        <div class="about-img-wrapper"></div>
+        <div class="about-img-wrapper">
+            <picture>
+              <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/hero/desktop/desktop-placeholder-lightbox-1x.jpg 1x, ./img/hero/desktop/desktop-placeholder-lightbox-2x.jpg 2x"
+              />
+              <source
+                  media="(min-width: 768px)"
+                  srcset="./img/hero/tablet/tablet-placeholder-lightbox-1x.jpg 1x, ./img/hero/tablet/tablet-placeholder-lightbox-2x.jpg 2x"
+                  />
+              <img
+                  class="about-img"
+                  src="./img/hero/mobile/mobile-placeholder-lightbox-1x.jpg"
+                  srcset="./img/hero/mobile/mobile-placeholder-lightbox-1x.jpg 1x, ./img/hero/mobile/mobile-placeholder-lightbox-2x.jpg 2x"
+                  alt="Опис вашого зображення"
+                  loading="lazy"
+                />
+            </picture>
+        </div>
         
         <div class="about-text-wrapper">
             <h2 class="about-title">The Artistry Behind Handmade Jewelry</h2>
@@ -14,7 +32,7 @@
             </p>
     
             <ul class="about-list">
-                <li class="about-list-item icon-nature">Inspired by Natureli</li>
+                <li class="about-list-item icon-nature">Inspired by Nature</li>
                 <li class="about-list-item icon-handcrafted">Handcrafted with Love</li>
                 <li class="about-list-item icon-story">Every Piece Tells a Story</li>
             </ul>
