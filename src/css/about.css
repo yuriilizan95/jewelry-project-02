@@ -1,0 +1,94 @@
+.about-section{
+    padding: 56px 0;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-img-wrapper{
+    width: 100%;
+    max-width: 335px;
+}
+
+.about-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-title{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    font-family: var(--second-family);
+}
+
+.about-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.about-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-list-item{
+    font-weight: 700;
+    font-size: 18px; 
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.about-list-item::before{
+    content: '';
+    display: inline-block;
+    width:24px;
+    height:24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon-nature::before{
+    background-image:url("../img/hero/svg/leaf.svg");
+}
+
+.icon-handcrafted::before{
+    background-image:url("../img/hero/svg/donate-heart.svg");
+}
+
+.icon-story::before{
+    background-image:url("../img/hero/svg/book.svg");
+}
+
+@media only screen and (min-width: 768px) {
+    .about-img-wrapper{
+    max-width: 704px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-img-wrapper{
+        max-width: 640px;
+    }
+
+    .about-container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-text-wrapper{
+        width: 640px;
+    }
+
+}
