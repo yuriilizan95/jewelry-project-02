@@ -1,8 +1,8 @@
-.section.about{
+.about-section{
     padding: 56px 0;
 }
 
-.container.about{
+.about-container{
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -82,7 +82,7 @@
         max-width: 640px;
     }
 
-    .container.about{
+    .about-container{
         flex-direction: row;
         align-items: center;
     }
