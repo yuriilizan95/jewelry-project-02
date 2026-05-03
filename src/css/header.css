@@ -1,4 +1,7 @@
-/* navbar */
+.navbar-container {
+  padding: 12px 12px 12px 20px;
+}
+
 .header-navigation {
   display: none;
 }
@@ -16,8 +19,6 @@
 .burger-btn {
   background: transparent;
   border: none;
-
-  margin: 12px 0;
 }
 
 .header-icon {
@@ -30,7 +31,7 @@
   }
 
   .navbar-container {
-    margin: 18px auto;
+    padding: 18px 32px;
   }
 
   .header-navigation {
@@ -39,8 +40,16 @@
 
   .header-nav-list {
     display: flex;
-    flex-direction: row;
     gap: 16px;
+  }
+
+  .header-link {
+    transition: color var(--t-duration) var(--t-timing);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    text-decoration: underline;
   }
 
   .header-link {
@@ -67,10 +76,22 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--main-text-color);
+
+    transition: background-color var(--t-duration) var(--t-timing);
+  }
+
+  .header-button:hover,
+  .header-button:focus {
+    border: var(--btn-border);
+    background-color: #fff;
   }
 }
 
 @media only screen and (min-width: 1440px) {
+  .navbar-container {
+    padding: 18px 64px;
+  }
+
   .header-navbar {
     display: flex;
     justify-content: center;
@@ -83,11 +104,6 @@
 
   .header-nav-list {
     gap: 32px;
-  }
-
-  .header-link:hover,
-  .header-link:focus {
-    text-decoration: underline;
   }
 
   .header-link:active {
@@ -106,147 +122,6 @@
   }
 
   .header-button:active {
-    box-shadow: var(--btn-active-shadow);
-  }
-}
-
-/* header */
-.header-title {
-  padding: 160px 0;
-  max-width: 100%;
-
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/header/mobile/mobile-header-1x.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (min-resolution: 2dppx) {
-  .header-title {
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/header/mobile/mobile-header-2x.jpg);
-  }
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.header-subtitle {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--main-bg-color);
-
-  max-width: 100%;
-}
-
-.header-text {
-  font-family: var(--main-font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--main-bg-color);
-
-  max-width: 100%;
-}
-
-.header-title-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 6px 12px;
-  margin-top: 38px;
-  text-decoration: none;
-
-  background-color: var(--norm-btn-bg-color);
-  border: var(--btn-border);
-
-  font-family: var(--main-font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--main-text-color);
-}
-
-@media only screen and (min-width: 768px) {
-  .header-title {
-    padding-top: 160px;
-    padding-bottom: 435px;
-
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/header/tablet/tablet-header-1x.jpg);
-  }
-
-  @media (min-resolution: 2dppx) {
-    .header-title {
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/header/tablet/tablet-header-2x.jpg);
-    }
-  }
-}
-
-.header-container {
-  margin-right: auto;
-}
-
-.header-subtitle {
-  max-width: 513px;
-}
-
-.header-text {
-  max-width: 513px;
-}
-
-.header-title-button {
-  display: flex;
-  width: 217px;
-  height: 36px;
-}
-
-@media only screen and (min-width: 1440px) {
-  .header-title {
-    padding-top: 224px;
-    padding-bottom: 360px;
-
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/header/desktop/desktop-header-1x.jpg);
-  }
-
-  @media (min-resolution: 2dppx) {
-    .header-title {
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/header/desktop/desktop-header-2x.jpg);
-    }
-  }
-
-  .header-subtitle {
-    font-size: 56px;
-  }
-
-  .header-title-button {
-    width: 192px;
-  }
-
-  .header-title-button:hover,
-  .header-title-button:focus {
-    border: var(--btn-border);
-    background-color: #fff;
-  }
-
-  .header-title-button:active {
     box-shadow: var(--btn-active-shadow);
   }
 }
