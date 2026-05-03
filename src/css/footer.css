@@ -1,0 +1,136 @@
+.footer {
+    padding-block: 80px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.footer-logo-img {
+    width: 217px;
+}
+
+.footer-socials {
+    margin-bottom: 64px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-navigation {
+    margin-bottom: 24px;
+}
+
+.footer-navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.footer-navigation-item {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.animated {
+  transition: var(--t-prop) var(--t-duration) var(--t-timing) var(--t-delay);
+}
+
+.footer-navigation-link {
+    --t-prop: color;
+}
+
+.footer-navigation-link:hover, .footer-navigation-link:focus {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.footer-navigation-link:active {
+    color: var(--link-active-color);
+    text-decoration: none;
+}
+
+.copyright::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: var(--wrap-border);
+    width: 100%;
+    height: 0px;
+}
+
+.copyright {
+    position: relative;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer .container {
+        padding-inline: 64px;
+    }
+
+    .footer-navigation-item {
+        font-size: 16px;
+    }
+
+    .footer-logo-img {
+        width: 342px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .footer-logo-img {
+        width: 84px;
+    }
+
+    .footer-social-item {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logo-socials {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-navigation-list {
+        min-width: 303px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
