@@ -53,6 +53,6 @@
     flex-direction: row;
   }
   .benefits-list-item {
-    flex-basis: calc(100% - (32px * 2) / 3);
+    flex-basis: calc((100% - 32px * 2) / 3);
   }
 }
