@@ -2,6 +2,11 @@
   padding: 12px 12px 12px 20px;
 }
 
+.header-logo-img {
+  width: 160px;
+  height: 68px;
+}
+
 .header-navigation {
   display: none;
 }
@@ -28,6 +33,11 @@
 @media only screen and (min-width: 768px) {
   .burger-btn {
     display: none;
+  }
+
+  .header-logo-img {
+    width: 84px;
+    height: 36px;
   }
 
   .navbar-container {
