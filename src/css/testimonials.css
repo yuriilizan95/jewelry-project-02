@@ -44,7 +44,7 @@ figcaption {
   gap: 24px;
 }
 
-.testimonial-comment-wrap {
+.testimonials-comment-wrap {
   min-height: 214px;
   width: 100%;
   display: flex;
@@ -54,7 +54,7 @@ figcaption {
   padding: 32px;
   background: var(--wrap-bg-color);
 }
-.testimonial-rating-list {
+.testimonials-rating-list {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -119,7 +119,7 @@ figcaption {
     min-width: 304px;
   }
 
-  .testimonial-comment-wrap {
+  .testimonials-comment-wrap {
     min-width: 640px;
   }
 }
