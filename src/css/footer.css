@@ -65,7 +65,7 @@
 }
 
 .footer-navigation-link:active {
-    color: #8668c7;
+    color: var(--link-active-color);
     text-decoration: none;
 }
 
@@ -75,7 +75,7 @@
     top: 0;
     left: 0;
 
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: var(--wrap-border);
     width: 100%;
     height: 0px;
 }
