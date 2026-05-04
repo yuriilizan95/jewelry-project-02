@@ -1,32 +1,35 @@
-<div class="mobile-menu">
-  <div class="container mob-menu-container">
-    <a class="menu-logo" href="/index.html"
-      ><img class="menu-logo-img" src="/img/footer-logo.svg" alt="Company logo"
+<div class="mobile-menu" data-mobile-menu>
+  <div class="container mobile-menu-container">
+    <a class="mobile-menu-logo" href="./index.html"
+      ><img
+        class="mobile-menu-logo-img"
+        src="/img/footer-logo.svg"
+        alt="Company logo"
     /></a>
-    <button class="mobmenu-close-button" type="button">
-      <svg class="mobmenu-close-icon" width="12" height="12">
-        <use href="../img/sprite.svg#close-icon"></use>
+    <button type="button" class="close-icon-btn" data-mobile-menu-close>
+      <svg class="close-icon" width="24" height="24">
+        <use href="/img/sprite.svg#close-icon"></use>
       </svg>
     </button>
-    <nav class="mob-menu-nav">
-      <ul class="mob-menu-list">
-        <li class="mob-menu-item">
-          <a class="mobmenu-link" href="#">About us</a>
+    <nav class="mobile-menu-navigation">
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#about">About us</a>
         </li>
-        <li class="mob-menu-item">
-          <a class="mobmenu-link" href="#">Benefits</a>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#benefits">Benefits</a>
         </li>
-        <li class="mob-menu-item">
-          <a class="mobmenu-link" href="#">Gallery</a>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#gallery">Gallery</a>
         </li>
-        <li class="mob-menu-item">
-          <a class="mobmenu-link" href="#">Testimonials</a>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#testimonials">Testimonials</a>
         </li>
-        <li class="mob-menu-item">
-          <a class="mobmenu-link" href="#">Contacts</a>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
-    <button class="mob-menu-button" type="button">Order Now</button>
+    <a class="mobile-menu-button" href="#contacts">Order Now</a>
   </div>
 </div>

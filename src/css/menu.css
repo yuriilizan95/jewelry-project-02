@@ -1,120 +1,154 @@
 .mobile-menu {
   position: fixed;
+  width: 100%;
+  height: 100dvh;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
+  background-color: var(--main-bg-color);
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
 
+  transition:
+    opacity var(--t-duration) var(--t-timing),
+    visibility 0s linear var(--t-duration);
+}
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+
+  transition:
+    opacity var(--t-duration) var(--t-timing),
+    visibility 0s;
+}
+.mobile-menu.is-open .mobile-menu-container {
+  transform: translateX(0);
 }
 
-.menu-logo {
-  margin: 2px 0 2px 20px;
-}
-.mob-menu-container {
+.mobile-menu-container {
   position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding-top: 2px;
-  padding-bottom: 24px;
+
+  transform: translateX(-100%);
+  transition: transform 250ms var(--t-timing);
 }
 
-.mobmenu-close-button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+.mobile-menu-logo {
+  padding-block: 2px;
+  margin-bottom: 16px;
+  width: 160px;
+  height: 68px;
+}
+.mobile-menu-logo-img {
   width: 100%;
+  height: 100%;
+}
+
+.close-icon-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   width: 48px;
   height: 48px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: transparent;
   border: none;
-  background-color: #fff;
+}
+.close-icon {
+  fill: var(--icons-fill);
+
+  transition: fill var(--t-duration) var(--t-timing);
 }
 
-.mobmenu-close-button:hover,
-.mobmenu-close-button:focus {
+.close-icon-btn:hover .close-icon,
+.close-icon-btn:focus .close-icon,
+.close-icon-btn:active .close-icon {
+  fill: var(--norm-btn-bg-color);
 }
 
-.mobmenu-close-button:hover .mobmenu-close-icon,
-.mobmenu-close-button:focus .mobmenu-close-icon {
+.mobile-menu-navigation {
+  margin-bottom: 64px;
 }
-
-.mobmenu-close-icon {
-  fill: #000;
-}
-
-.mob-menu-nav {
-  margin-bottom: auto;
-}
-
-.mob-menu-list {
+.mobile-menu-nav-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 64px;
-  margin-top: 16px;
 }
-
-.mobmenu-link {
+.mobile-menu-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #000;
+  color: var(--main-text-color);
+
+  position: relative;
+  display: inline-block;
+
+  transition: color var(--t-duration) var(--t-timing);
+}
+.mobile-menu-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 4px;
+  left: 50%;
+  background-color: transparent;
+
+  transform: translateX(-50%);
+  transition:
+    background-color var(--t-duration) var(--t-timing),
+    width 250ms var(--t-timing);
 }
 
-.mobmenu-link:hover,
-.mobmenu-link:focus {
-  text-decoration: underline;
+.mobile-menu-link:hover::after,
+.mobile-menu-link:focus::after {
+  background-color: currentColor;
+  width: 100%;
 }
 
-.mobmenu-link:active {
-  color: #8668c7;
+.mobile-menu-link:active {
+  color: var(--link-active-color);
 }
 
-.mob-menu-button {
+.mobile-menu-link:active::after {
+  background-color: transparent;
+}
+
+.mobile-menu-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 335px;
-  margin: 0 auto;
-  background-color: #ccc16e;
-  border: 1px solid #ccc16e;
-  padding: 6px 12px;
 
+  padding: 6px;
+  text-decoration: none;
+
+  background-color: var(--norm-btn-bg-color);
+  border: var(--btn-border);
+
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  margin-top: auto;
-  margin-bottom: 24px;
-  color: #000;
+  color: var(--main-text-color);
+
+  transition: background-color var(--t-duration) var(--t-timing);
 }
 
-.mob-menu-button:hover,
-.mob-menu-button:focus {
-  border: 1px solid #ccc16e;
-  background-color: #fff;
+.mobile-menu-button:hover,
+.mobile-menu-button:focus {
+  background-color: transparent;
 }
 
-.mob-menu-button:active {
-  border: 1px solid #ccc16e;
-  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
-  background-color: #ccc16e;
+.mobile-menu-button:hover:active,
+.mobile-menu-button:focus:active {
+  box-shadow: var(--btn-active-shadow);
+  background-color: var(--norm-btn-bg-color);
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
