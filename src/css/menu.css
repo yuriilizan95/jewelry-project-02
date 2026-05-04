@@ -1,7 +1,7 @@
-.is-disabled {
+/* .is-disabled {
   pointer-events: none;
   opacity: 0.3;
-}
+} */
 
 .mobile-menu {
   position: fixed;
@@ -96,18 +96,22 @@
 .mobile-menu-link::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 1px;
   bottom: 4px;
-  left: 0;
+  left: 50%;
   background-color: transparent;
 
-  transition: background-color var(--t-duration) var(--t-timing);
+  transform: translateX(-50%);
+  transition:
+    background-color var(--t-duration) var(--t-timing),
+    width 250ms var(--t-timing);
 }
 
 .mobile-menu-link:hover::after,
 .mobile-menu-link:focus::after {
   background-color: currentColor;
+  width: 100%;
 }
 
 .mobile-menu-link:active {
