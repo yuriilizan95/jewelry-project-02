@@ -1,0 +1,125 @@
+/* =========== BASE =========== */
+
+.gallery {
+  text-align: center;
+}
+
+/* TITLE */
+.gallery_title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+  margin-bottom: 8px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TEXT */
+.gallery_text {
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  line-height: 1.5;
+
+  margin-bottom: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+/* GRID */
+.gallery_grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* COLUMN */
+.gallery_column {
+  display: grid;
+  gap: 16px;
+}
+
+/* ITEM */
+.gallery_item {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* MOBILE — всі однакові */
+.gallery_item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+/* IMAGE */
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =========== TABLET =========== */
+
+@media (min-width: 768px) {
+
+  .gallery_title {
+    max-width: 500px;
+  }
+
+  .gallery_text {
+    max-width: 500px;
+    margin-bottom: 80px;
+  }
+
+  .gallery_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .gallery_column {
+    gap: 24px;
+  }
+
+
+  .gallery_item {
+    aspect-ratio: unset;
+  }
+
+  .gallery_item-1 { height: 368px; }
+  .gallery_item-2 { height: 226px; }
+  .gallery_item-3 { height: 216px; }
+  .gallery_item-4 { height: 386px; }
+}
+
+
+/* =========== DESKTOP =========== */
+
+@media (min-width: 1440px) {
+
+  .gallery_title {
+    font-size: 48px;
+    max-width: 700px;
+  }
+
+  .gallery_text {
+    max-width: 600px;
+  }
+
+  .gallery_grid {
+    gap: 32px;
+  }
+
+  .gallery_column {
+    gap: 32px;
+  }
+
+  .gallery_item-1 { height: 640px; }
+  .gallery_item-2 { height: 426px; }
+  .gallery_item-3 { height: 426px; }
+  .gallery_item-4 { height: 640px; }
+}
