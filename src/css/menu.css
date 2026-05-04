@@ -38,8 +38,8 @@
 }
 
 .mobile-menu-logo {
-  margin-top: 2px;
-  margin-bottom: 18px;
+  padding-block: 2px;
+  margin-bottom: 16px;
   width: 160px;
   height: 68px;
 }
