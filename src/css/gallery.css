@@ -40,19 +40,15 @@
 .gallery_grid {
   display: grid;
   gap: 16px;
-}
-
-/* COLUMN */
-.gallery_column {
-  display: grid;
-  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* ITEM */
 .gallery_item {
   border-radius: 8px;
   overflow: hidden;
-
   width: 100%;
   aspect-ratio: 1 / 1;
 }
@@ -83,10 +79,6 @@
     gap: 24px;
   }
 
-  .gallery_column {
-    gap: 24px;
-  }
-
   .gallery_item {
     aspect-ratio: unset;
   }
@@ -112,10 +104,6 @@
   }
 
   .gallery_grid {
-    gap: 32px;
-  }
-
-  .gallery_column {
     gap: 32px;
   }
 
