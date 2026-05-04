@@ -36,6 +36,7 @@
 .contacts-address {
   font-style: normal;
   margin-bottom: 32px;
+  flex-basis: 100%;
 }
 
 .contacts-address-list {
@@ -47,6 +48,7 @@
 .contacts-address-item {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
 }
 
 .contacts-address-svg {
@@ -69,8 +71,18 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
+  outline: none;
+  transition: var(--t-prop) var(--t-duration) var(--t-timing);
+}
+
+.contacts-address-link:focus,
+.contacts-address-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-address-link:active {
+  color: var(--link-active-color);
 }
 
 .contacts-form {
@@ -80,9 +92,6 @@
 .contacts-form-inner {
   display: flex;
   flex-direction: column;
-}
-
-.contacts-form-inner:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -102,6 +111,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  transition: var(--t-prop) var(--t-duration) var(--t-timing);
 }
 
 .contacts-form-input:not(:placeholder-shown):invalid {
@@ -117,10 +127,7 @@
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition:
-    opacity 300ms ease-in-out,
-    max-height 300ms ease-in-out,
-    margin-top 300ms ease-in-out;
+  transition: var(--t-prop) var(--t-duration) var(--t-timing);
   pointer-events: none;
 }
 
@@ -140,6 +147,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  resize: none;
+  transition: var(--t-prop) var(--t-duration) var(--t-timing);
 }
 
 .contacts-form-input::placeholder,
@@ -164,6 +173,7 @@
   width: 100%;
   height: 36px;
   outline: none;
+  transition: var(--t-prop) var(--t-duration) var(--t-timing);
 }
 
 .contacts-form-btn:hover,
@@ -174,5 +184,43 @@
 .contacts-form:has(.contacts-form-input:not(:placeholder-shown):invalid)
   .contacts-form-btn {
   opacity: 0.3;
-  /* pointer-events: none; */
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-address-list {
+    gap: 25px;
+  }
+
+  .contacts-address-item {
+    flex-basis: calc((100% - 25px * 2) / 3);
+  }
+
+  .contacts-form-btn {
+    max-width: 249px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contacts-title {
+    font-size: 48px;
+  }
+
+  .contacts-wrap {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+
+  .contacts-address {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .contacts-form {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .contacts-form-btn {
+    max-width: 192px;
+  }
 }
