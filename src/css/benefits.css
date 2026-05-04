@@ -21,8 +21,6 @@
   border: var(--wrap-border);
   padding: 32px 12px;
   background: var(--wrap-bg-color);
-
-  width: 100%;
 }
 
 .benefits-item-title {
