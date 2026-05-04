@@ -21,10 +21,12 @@
     refs.menu.classList.toggle("is-open");
   }
 
-  function onMenuClick(e) {
+   function onMenuClick(e) {
+    
     const link = e.target.closest(".mobile-menu-link");
+    const button = e.target.closest(".mobile-menu-button");
 
-    if (link) {
+    if (link || button) {
       refs.menu.classList.remove("is-open");
     }
   }
