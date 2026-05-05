@@ -33,6 +33,10 @@
 
 /* Базові стилі */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--main-font-family);
   color: var(--main-text-color);
