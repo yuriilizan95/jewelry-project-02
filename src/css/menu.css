@@ -82,31 +82,12 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-text-color);
-
-  position: relative;
   display: inline-block;
-
-  transition: color var(--t-duration) var(--t-timing);
-}
-.mobile-menu-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 4px;
-  left: 50%;
-  background-color: transparent;
-
-  transform: translateX(-50%);
-  transition:
-    background-color var(--t-duration) var(--t-timing),
-    width 250ms var(--t-timing);
 }
 
-.mobile-menu-link:hover::after,
-.mobile-menu-link:focus::after {
-  background-color: currentColor;
-  width: 100%;
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  text-decoration: underline;
 }
 
 .mobile-menu-link:active {
