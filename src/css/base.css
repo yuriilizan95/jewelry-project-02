@@ -1,6 +1,8 @@
 /* Рути */
 
 :root {
+  scroll-behavior: smooth;
+
   --main-font-family: 'Mulish', sans-serif;
   --second-family: 'Sora', sans-serif;
 
@@ -32,10 +34,6 @@
 }
 
 /* Базові стилі */
-
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   font-family: var(--main-font-family);
