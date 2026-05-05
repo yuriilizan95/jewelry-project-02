@@ -3,6 +3,7 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./btn.css');
+@import url('./animated.css');
 
 /* Sections style */
 @import url('./header.css');

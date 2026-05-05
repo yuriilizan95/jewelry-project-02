@@ -85,11 +85,6 @@
   display: inline-block;
 }
 
-.mobile-menu-link:hover,
-.mobile-menu-link:focus {
-  text-decoration: underline;
-}
-
 .mobile-menu-link:active {
   color: var(--link-active-color);
 }
