@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  border: var(--btn-border);
+  padding: 6px 12px;
+  background-color: var(--norm-btn-bg-color);
+
+  transition: var(--t-prop) var(--t-duration) var(--t-timing);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--btn-hover-bg-color);
+}
+
+.btn:active {
+  box-shadow: var(--btn-active-shadow);
+  background-color: var(--norm-btn-bg-color);
+}

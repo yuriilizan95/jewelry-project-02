@@ -8,6 +8,7 @@
   --main-text-color: #000;
   --invalid-text-color: #8c0000;
   --norm-btn-bg-color: #ccc16e;
+  --btn-hover-bg-color: transparent;
   --btn-border: 1px solid #ccc16e;
   --btn-active-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
   --link-active-color: #8668c7;
