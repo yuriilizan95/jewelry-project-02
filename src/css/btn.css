@@ -11,7 +11,7 @@
   padding: 6px 12px;
   background-color: var(--norm-btn-bg-color);
 
-  transition: var(--t-prop) var(--t-duration) var(--t-timing);
+  transition: background-color var(--t-duration) var(--t-timing);
 }
 
 .btn:hover,
