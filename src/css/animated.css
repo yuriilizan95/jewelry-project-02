@@ -1,0 +1,27 @@
+.animated-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: currentColor;
+
+  transition: color var(--t-duration) var(--t-timing);
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+
+  transform: translateX(-50%);
+  transition: width var(--t-duration) var(--t-timing);
+}
+
+.animated-underline:hover::after,
+.animated-underline:focus::after {
+  width: 100%;
+}
