@@ -1,10 +1,7 @@
-/* =========== BASE =========== */
-
 .gallery {
   text-align: center;
 }
 
-/* TITLE */
 .gallery_title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -18,7 +15,6 @@
   margin-right: auto;
 }
 
-/* TEXT */
 .gallery_text {
   font-family: var(--main-font-family);
   font-size: 18px;
@@ -30,14 +26,11 @@
   margin-right: auto;
 }
 
-/* GRID */
 .gallery_grid {
   display: grid;
   gap: 16px;
 }
 
-
-/* ITEM */
 .gallery_item {
   border-radius: 8px;
   overflow: hidden;
@@ -49,7 +42,6 @@
   }
 }
 
-/* IMAGE */
 .gallery_img {
   width: 100%;
   height: 100%;
@@ -58,7 +50,6 @@
 }
 
 @media (min-width: 768px) {
-
   .gallery_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -89,10 +80,8 @@
     grid-row: 3;
   }
 }
-/* =========== DESKTOP =========== */
 
 @media (min-width: 1440px) {
-
   .gallery_title {
     font-size: 48px;
     max-width: 700px;
